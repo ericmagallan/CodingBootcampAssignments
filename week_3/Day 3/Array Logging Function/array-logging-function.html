@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Superhero Logging - No Functions</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script type="text/javascript">
+      var printArray = function(arr) {
+        for(var i = 0; i < arr.length; i++) {
+          console.log(arr[i]);
+        }
+      }
+      var printArrayOfArrays = function(arrOfArrs) {
+        for(var i = 0; i < arrOfArrs.length; i++) {
+          for(var j = 0; j < arrOfArrs[i].length; j++) {
+            console.log(arrOfArrs[i][j]);
+          }
+          console.log("--------")
+        }
+      }
+      // Various Arrays
+      var brands = ["Acer", "Apple", "Sony", "Samsung"];
+      var heroes = ["Black Panther", "Cyborg", "Black Canary", "Donna Troy", "Huntress", "Blue Beetle", "Captain Atom"];
+      var booksOnMyShelf = ["Calculus Early Transcendentals", "Ravens", "The Self Illusion", "Harry Potter"];
+      var thingsInFrontOfMe = ["Laptop", "Beanbag", "Cats", "Slippers"];
+      var howIFeel = ["Sleep Deprived", "Wired on Coffee", "Excited"];
+      printArrayOfArrays([brands,heroes,booksOnMyShelf,thingsInFrontOfMe, howIFeel]);
+      // For Loop for Brands
+      // printArray(brands);
+      // console.log("---------");
+
+      // // For Loop for Heroes
+      // printArray(heroes);
+      // console.log("---------");
+
+      // // For Loop for booksOnMyShelf
+      // printArray(booksOnMyShelf)
+      // console.log("---------");
+
+      // // For Loop for thingsInFrontOfMe
+      // printArray(thingsInFrontOfMe);
+      // console.log("---------");
+
+      // // For Loop for howIFeel
+      // print(howIFeel);
+      // console.log("---------");
+
+    </script>
+
+  </body>
+</html>

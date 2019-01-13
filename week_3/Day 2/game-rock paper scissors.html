@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>You Chose:
+        <span id="user-choice"></span>
+    </p>
+    <p>Computer Chose:
+        <span id="ai-choice"></span>
+    </p>
+    <p>Wins:
+        <span id="wins">0</span>
+    </p>
+    <p>Losses:
+        <span id="losses">0</span>
+    </p>
+    <p>Ties:
+        <span id="ties">0</span>
+    </p>
+    <script>
+        // variables
+        var userChoiceElem = document.getElementById("user-choice");
+        var aiChoiceElem = document.getElementById("ai-choice");
+        var winsElem = document.getElementById("wins");
+        var lossesElem = document.getElementById("losses");
+        var tiesElem = document.getElementById("ties");
+
+        var wins = 0;
+        var ties = 0;
+        var losses = 0;
+
+        var computerChoices = ["r", "p", "s"];
+        // handle user input - get user guess
+        document.onkeyup = function(e) {
+            var userInput = e.key;
+            var randomNum = Math.floor(Math.random() *3);
+            var userInput = e.key;
+            // get ai guess
+            var randomNum = Math.floor(Math.random() * 3);
+            console.log `
+            // compare userGuess to aiGuess and see who won
+            
+            // write answers to the page
+            userChoiceElem.textContent = userInput;
+            aiChoiceElem.textContent = " ";
+            winsElem.textContent = wins;
+            lossesElem.textContent = losses;
+            tiesElem.textContent = ties;
+
+        }
+        
+    </script>
+</body>
+
+</html>
