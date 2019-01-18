@@ -63,5 +63,11 @@ function Player (name, position, offense, defense, goodGame, badGame, printStats
 
 this.printStats = function() {
     console.log("Name: " + this.name + "\nPosition: " + this.position + "\nOffense: " + this.offense + "\nDefense: " + this.defense + "\nGood Game: " + this.goodGame "\nBad Game: " + this.badGame + "\nPrint Stats: " + this.printStats)
-};
-};
+}
+}
+
+var starter = new starter("AntonioBrown, Wide Receiver, Offense");
+var sub = new substitute("OchoCinco, Corner Back, Defense")
+var sub = new substitute("PlayerSub");
+
+starter.print
